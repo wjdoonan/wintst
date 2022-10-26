@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>wdocs</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Wilson Doonan">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh">
+    <meta name="description" content="free docs">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="w.css">
+    <meta property="og:url" content="https://WDocs.com/">
+    <meta property="og:type" content="website">
+    <script src="https://kit.fontawesome.com/536dad5a0d.js" crossorigin="anonymous"></script>
+    <style>
+        textarea {
+            border: none;
+            outline: none;
+            text-align: left;
+            margin: auto;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 0px;
+            padding: 4vw 4vw 4vw 
+            
+            
+            4vw;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+            font-size: 100;
+            size: 120px;
+            color: rgb(0, 0, 0);
+            border-color: white;
+            align-self: center;
+            resize: none;
+            height: 50vw;
+            width: 40%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: rgb(220, 220, 220);
+        }
+        header {
+            width: 100%;
+        }
+        nav {
+            background-color: white;
+            border: 1pt solid black;
+        }
+        table, td, th {
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        #table {
+            border: dashed;
+        }
+        th {
+            background-color: rgb(255, 255, 255);
+        }
+        table.solide {
+            border: solid;
+        }
+        input {
+            border:none;
+            text-decoration: none;
+            outline: none;
+            color: black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .dropbtn {
+            background-color: white;
+            color: black;
+            padding: 160px;
+            font-size: 16px;
+            border: solid rgb(255, 255, 255) 1px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            float: left;    
+            position: relative;    
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 70px;
+            box-shadow: 0px 8px 16px 0px black;
+            z-index: 0;
+        }
+        .dropdown-content button {
+            color: black;
+            padding: 1px 1px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content button:hover {
+            background-color: rgb(156, 156, 156);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+            width: 152px;
+            border-radius: 10px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #e6e6e6;
+        }
+        button {
+            border-radius: 2px;
+            background-color: rgb(59, 59, 59);
+            color: white;
+        }
+        #mydiv {
+            display: none;
+            text-align: center;
+        }
+        .drop {
+          color: black;
+          background-color: white;
+          border-radius: 0px;
+          width: fit-content;
+          border: none;
+        }
+        #container {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  background: rgb(255, 0, 0);
+  Border-radius: 20px;
+  opacity: 90%;
+  margin: auto;
+}
+#animate {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: rgb(120, 0, 0);
+  Border-radius: 20px;
+  opacity: 90%;
+}
+#animate2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: rgb(255, 58, 51);
+  Border-radius: 20px;
+  opacity: 90%;
+}
+#animate3 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: rgb(255, 126, 126);
+  Border-radius: 20px;
+  opacity: 90%;
+}
+#animate4 {
+  width: 300px;
+  height: 300px;
+  position: -webkit-sticky;
+  background-color: rgb(255, 0, 234);
+  Border-radius: 20px;
+  opacity: 90%;
+}
+    </style>
+</head>
+<script>
+
+</script>
+<div id="mydiv">
+<header style="position: fixed;">
+    <nav> 
+        <i style="font-size: 80px;color: red;" class="fa-solid fa-file-lines"></i><br><br>
+        
+        <div class="navbar"><!--1-->
+            <div class="dropdown"><!--2-->
+                <button  onclick="myStyles">background colors  <i class="fa-solid fa-caret-down"></i></button>
+                
+            <div class="dropdown-content"><!--3-->
+                <nav><button type="button" onclick="document.getElementById('demo').style.backgroundColor = 'red'" class="dropbtn" id="dropdown"><div class="red1"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundColor = 'black'" class="dropbtn" id="dropdown"><div class="blue"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundColor = 'white'" class="dropbtn" id="dropdown"><div id="white"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgba(219, 219, 219)'" class="dropbtn" id="dropdown"><div id="white2"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgba(183, 183, 183)'" class="dropbtn" id="dropdown"><div id="white3"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgba(147, 147, 147)'" class="dropbtn" id="dropdown"><div id="white4"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgba(111, 111, 111)'" class="dropbtn" id="dropdown"><div id="white5"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgba(75, 75, 75)'" class="dropbtn" id="dropdown"><div id="white6"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgba(39, 39, 39)'" class="dropbtn" id="dropdown"><div id="white7"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgba(3, 3, 3)'" class="dropbtn" id="dropdown"><div id="white8"></div></button>
+                    <!--white end-->
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'red'" class="dropbtn" id="dropdown"><div id="red1"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(219, 0, 0)'" class="dropbtn" id="dropdown"><div id="red2"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(183, 0, 0)'" class="dropbtn" id="dropdown"><div id="red3"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(147, 0, 0)'" class="dropbtn" id="dropdown"><div id="red4"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(111, 0, 0)'" class="dropbtn" id="dropdown"><div id="red5"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(75, 0, 0)'" class="dropbtn" id="dropdown"><div id="red6"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(39, 0, 0)'" class="dropbtn" id="dropdown"><div id="red7"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(3, 0, 0)'" class="dropbtn" id="dropdown"><div id="red8"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'orange'" class="dropbtn" id="dropdown"><div id="orange"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(219, 142, 0)'" class="dropbtn" id="dropdown"><div id="orange1"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(183, 119, 0)'" class="dropbtn" id="dropdown"><div id="orange2"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(147, 95, 0)'" class="dropbtn" id="dropdown"><div id="orange3"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(111, 72, 0)'" class="dropbtn" id="dropdown"><div id="orange4"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(75, 49, 0)'" class="dropbtn" id="dropdown"><div id="orange5"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(39, 25, 0)'" class="dropbtn" id="dropdown"><div id="orange6"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'rgb(3, 2, 0)'" class="dropbtn" id="dropdown"><div id="orange7"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'yellow'" class="dropbtn" id="dropdown"><div id="yellow"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'green'" class="dropbtn" id="dropdown"><div id="green"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'blue'" class="dropbtn" id="dropdown"><div id="blue"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'violet'" class="dropbtn" id="dropdown"><div id="violet"></div></button>
+                    <button type="button" onclick="document.getElementById('demo').style.backgroundcolor = 'vi'" class="dropbtn" style="display: none;" id="dropdown"><div id="vi"></div></button>
+                    <input type="color" onchange="backgroundcolor()" id="backgroundcoler">
+                </nav></div><!--3-->
+        </div><!--2-->
+        <div class="dropdown"><!--2-->
+            <button  onclick="myStyles">text colors  <i class="fa-solid fa-caret-down"></i></button>
+            <i class="dropdown-content"></i>
+        <div class="dropdown-content"><!--3-->
+            <input type="color" id="backgroundcoler" onchange="Backgroundcolor()">
+            <nav><button type="button" onclick="document.getElementById('demo').style.color = 'white'" class="dropbtn" id="dropdown"><div id="white"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgba(219, 219, 219)'" class="dropbtn" id="dropdown"><div id="white2"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgba(183, 183, 183)'" class="dropbtn" id="dropdown"><div id="white3"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgba(147, 147, 147)'" class="dropbtn" id="dropdown"><div id="white4"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgba(111, 111, 111)'" class="dropbtn" id="dropdown"><div id="white5"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgba(75, 75, 75)'" class="dropbtn" id="dropdown"><div id="white6"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgba(39, 39, 39)'" class="dropbtn" id="dropdown"><div id="white7"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgba(3, 3, 3)'" class="dropbtn" id="dropdown"><div id="white8"></div></button>
+                <!--white end-->
+                <button type="button" onclick="document.getElementById('demo').style.color = 'red'" class="dropbtn" id="dropdown"><div id="red1"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(219, 0, 0)'" class="dropbtn" id="dropdown"><div id="red2"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(183, 0, 0)'" class="dropbtn" id="dropdown"><div id="red3"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(147, 0, 0)'" class="dropbtn" id="dropdown"><div id="red4"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(111, 0, 0)'" class="dropbtn" id="dropdown"><div id="red5"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(75, 0, 0)'" class="dropbtn" id="dropdown"><div id="red6"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(39, 0, 0)'" class="dropbtn" id="dropdown"><div id="red7"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(3, 0, 0)'" class="dropbtn" id="dropdown"><div id="red8"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'orange'" class="dropbtn" id="dropdown"><div id="orange"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(219, 142, 0)'" class="dropbtn" id="dropdown"><div id="orange1"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(183, 119, 0)'" class="dropbtn" id="dropdown"><div id="orange2"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(147, 95, 0)'" class="dropbtn" id="dropdown"><div id="orange3"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(111, 72, 0)'" class="dropbtn" id="dropdown"><div id="orange4"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(75, 49, 0)'" class="dropbtn" id="dropdown"><div id="orange5"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(39, 25, 0)'" class="dropbtn" id="dropdown"><div id="orange6"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'rgb(3, 2, 0)'" class="dropbtn" id="dropdown"><div id="orange7"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'yellow'" class="dropbtn" id="dropdown"><div id="yellow"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'green'" class="dropbtn" id="dropdown"><div id="green"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'blue'" class="dropbtn" id="dropdown"><div id="blue"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'violet'" class="dropbtn" id="dropdown"><div id="violet"></div></button>
+                <button type="button" onclick="document.getElementById('demo').style.color = 'vi'" class="dropbtn" style="display: none;" id="dropdown"><div id="vi"></div></button>
+</nav>
+            </div><!--3-->
+    </div><!--2--><br><br>
+    <div class="navbar"><!--1-->
+        <div class="dropdown"><!--2-->
+            <button  onclick="myStyles">fonts <i class="fa-solid fa-caret-down"></i></button>
+    
+        <div class="dropdown-content"><!--3-->
+            
+                <button class="drop" onclick="document.getElementById('demo').style.fontFamily = 'Arial, Helvetica, sans-serif'"><span style="font-family: Arial, Helvetica, sans-serif;">Arial</span></button><hr>
+                <button class="drop" onclick="document.getElementById('demo').style.fontFamily = 'Courier New, Courier, monospace'"><span style="font-family: 'Courier New', Courier, monospace;">courier new</span></button><hr>
+                <button class="drop" onclick="document.getElementById('demo').style.fontFamily = 'Times New Roman'"><span style="font-family: 'Times New Roman', Times, serif;">Times new Roman</span></button><hr>
+                <button class="drop" onclick="document.getElementById('demo').style.fontFamily = 'georgia'"><span style="font-family: Georgia, 'Times New Roman', Times, serif;">Georgia</span></button><hr>
+                <button class="drop" onclick="document.getElementById('demo').style.fontFamily = 'garamond'"><span style="font-family: garamond;">Garamond</span></button><hr>
+                <button class="drop" onclick="document.getElementById('demo').style.fontFamily = 'veranda'"><span style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Veranda</span></button><hr>
+                <button class="drop" onclick="document.getElementById('demo').style.fontFamily = 'Helvetica'"><span style="font-family:Arial, Helvetica, sans-serif;">Helvetica</span></button><hr>
+                <button class="drop" onclick="document.getElementById('demo').style.fontFamily = 'lucida console'"><span style="font-family:Monaco;">Lucida Console</span></button>
+            </div><!--3-->
+    </div><!--2-->
+    <button type="button" onclick="document.getElementById('demo').style.textAlign = 'left'"><i class="fa-solid fa-align-left"></i></button>
+    <button type="button" onclick="document.getElementById('demo').style.textAlign = 'center'"><i class="fa-solid fa-align-center"></i></button>
+    <button type="button" onclick="document.getElementById('demo').style.textAlign = 'right'"><i class="fa-solid fa-align-right"></i></button>
+    <button type="button" onclick="document.getElementById('demo').style.textAlign = 'justify'"><i class="fa-solid fa-align-justify"></i></button>
+        </div><!--1-->
+        <br></nav><br>
+</header><br><br><br><br><br><br><br><br><br><br><br><br>
+<body onload="myFunction();myMove();myMove2();myMove3();myMove4();myMove5();myMove6();myMove7()">
+    
+      
+    <form >
+        <textarea id="demo" aria-multiline="true" maxlength="3772" placeholder="type here" spellcheck="true" rows="60" cols="93" ></textarea>
+    </form>
+</div>
+    <script>
+        function backgroundcolor() {
+          var backgroundcoler = document.getElementById("backgroundcoler").value;
+          document.getElementById("demo").style.backgroundColor = backgroundcoler;
+        }
+    </script>
+    <script>
+        var myvar;
+        function myFunction() {
+            myvar = setTimeout(showPage, 2500)
+        }
+        function showPage() {
+            document.getElementById("co").style.display = "none";
+            document.getElementById("mydiv").style.display = "block";
+        }
+    </script>
+    
+<script>
+function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 250) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+
+<script>
+function myMove2() {
+  let id = null;
+  const elem = document.getElementById("animate2");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 250) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.down = pos + "px"; 
+    }
+  }
+}
+</script>
+
+<script>
+function myMove3() {
+  let id = null;
+  const elem = document.getElementById("animate3");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 250) {
+      clearInterval(id);
+    } else {
+      pos++;  
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+<script>
+    function myMove4() {
+      let id = null;
+      const elem = document.getElementById("container");   
+      let pos = 0;
+      clearInterval(id);
+      id = setInterval(frame, 5);
+      function frame() {
+        if (pos == 30) {
+          clearInterval(id);
+        } else {
+          pos++;  
+          elem.style.left = pos + "%"; 
+        }
+      }
+    }
+    </script>
+    <script>
+      function myMove5() {
+        let id = null;
+        const elem = document.getElementById("animate4");   
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+          if (pos == 60) {
+            clearInterval(id);
+          } else {
+            pos++;  
+            elem.style.left = pos + "px"; 
+          }
+        }
+      }
+
+    </script>
+    <div id="co">
+    <div id ="container">
+        <div id ="animate2"></div>
+          <div id ="animate"></div>
+            <div id="animate3"></div>
+            <div id="amimate4"></div>
+          </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <h1 style="text-align: center;" id="name" >WDocs</h1>
+    </div>
+</body>
+</html>

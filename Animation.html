@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="file:///C:/Users/wjdoo/OneDrive/Desktop/wintst/Media/wintst_images/winstvw20logo.png">
+    <title id="h">start</title>
+    <link rel="stylesheet" href="winst styles style sheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aguafina">
+    <style>
+        #image_red {
+            position: fixed;
+            animation: rotate 10s;
+            margin-top: 25%;
+            margin-left: 20%;
+        }
+        #image_orange {
+            position: fixed;
+            animation: rotate 10s;
+        }
+        #image_green {
+            position: fixed;
+            animation: rotate 10s;
+        }
+        #image_blue {
+            position: fixed;
+            animation: rotate 10s;
+        }
+        #image_white {
+            position: fixed;
+            animation: rotate 10s;
+        }
+        
+        @keyframes rotate {
+            0% {transform: rotate(0deg);}
+            50% {transform: rotate(3690deg);}
+            100% {transform: rotate(3690deg);}
+        }
+    </style>
+</head>
+<body>
+<div class="rotating-conainer">
+    <div id="image_red"><img style="width:50vw;" src="Media/wintst_images/winst logo.png"></div>
+</div>
+<script>
+    //setTimeout(redirect(), 5000);
+    setTimeout(redirect(), 1000)
+    function redirect() {
+        document.getElementById("h").innerHTML = "hello";
+    }
+</script>
+</body>
+</html>

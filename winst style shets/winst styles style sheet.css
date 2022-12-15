@@ -1,0 +1,206 @@
+:root {
+    --favgreen: rgba(23, 131, 23, 0.504);
+    --white: rgb(255, 255, 255);
+}
+* {
+    overflow: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.header {
+    height: fit-content;
+    margin-top: -9px;
+    margin-left: -9px;
+    margin-right: -9px;
+    background-color: var(--white);
+    z-index: 2;
+    height: 10%;
+}
+body {
+    background-color: var(--white);
+    font-family: papyrus;
+    text-align: center;
+    margin: 0%;
+}
+#main_content {
+    height: 90%;
+    margin: 0%;
+    background-color: rgb(245, 245, 245);
+}
+.capitalize  {
+    text-transform: uppercase;
+}
+::-webkit-scrollbar {
+    width:30px;
+}
+#logo_icon {
+    position: fixed;
+    padding: 12px;
+    border-radius: 0 0% 5% 0%;
+    top: 0px;
+    left: 0px;
+    height: 9vh;
+    z-index: +1;
+}
+#logo_icon:hover {
+    background-color: var(--favgreen);
+}
+#icon {
+    padding: 12px;
+    z-index: +1;
+    border: 2px solid rgb(31, 57, 31);
+    border-collapse: collapse;
+    color: rgba(23, 131, 23);
+}
+#icon:hover {
+    background-color: var(--favgreen);
+}
+.border {
+    border-collapse: collapse;
+}
+.left_border {
+    border-radius: 5% 0% 5% 0%;
+}
+.input {
+    border: var(--favgreen) solid 2px;
+    width: 50%;
+    resize: none;
+    height: fit-content;
+    text-align: center;
+}
+.input:focus {
+    background-color: var(--favgreen);
+    color: white;
+    border: none;
+}
+.tool {
+    position: fixed;
+    margin: 12.5%;
+    background-color: var(--white);
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 75%;
+    height: 75%;
+    z-index: +3;
+}
+.tool-background {
+    position: fixed;
+    transition: 2s;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    width: 102%;
+    height: 102%;
+    z-index: +3;
+    margin: -10px;
+    display: none;
+}
+.close-tool {
+    position: fixed;
+    border-radius: 50%;
+    right: 30px;
+    top: 30px;
+    font-size: 30px;
+    color: rgb(93, 145, 93);
+    background-color: var(--white);
+    width: 50px;
+}
+.close-tool:hover {
+    background-color: rgba(23, 131, 23, 0.1);
+}
+input {
+    color: var(--favgreen);
+    background-color: var(--white);
+}
+.file-data {
+    margin: 12px 12px 12px 100px;
+}
+.tab {
+    padding: 6px;
+    background-color: var(--favgreen);
+    height: 20px;
+    transition: 0.5s;
+}
+.tab-focus {
+    border-bottom: var(--favgreen) 2px dotted;
+}
+.tabs {
+    float: right;
+    position: relative;
+    margin-top: -20px;
+    margin-right: 12px;
+    display: inline-grid;
+    grid-template-columns: auto auto  auto auto auto auto auto;
+    border: black 2px solid;
+}
+.doc-editor {
+    margin: 0%;
+    height: fit-content;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  .logo_image {
+    height: 24px;
+    width: auto;
+  }
+
+  /*content box elements*/
+  .content_box {
+    width: 80%;
+    margin: 10%;
+    border: none;
+  }
+  .content_box_title {
+    width: 100%;
+    margin: 0%;
+  }
+  .content_table {
+    width: 100%;
+    text-align: center;
+  }
+  tr {
+    text-align: center;
+  }

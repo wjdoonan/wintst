@@ -1,0 +1,33 @@
+tabs
+I. page
+    A. format
+    B. header
+    C. body
+    D. footer
+II. insert
+    A. table
+        1. bordered
+
+    B. list
+        1. ordered
+            a. numberd
+                i. Capitol 
+                
+            b. lettered 
+        2. unordered 
+            a. points
+            b. dimonds
+III. text
+    A. colors
+        1. rgb color picker
+        2. color choices
+    B. font
+        1. google fonts
+        2. regular fonts
+    C. style
+        1. font size
+        2. weight
+        3 text spacing
+IV. images
+V. addons
+VI. export

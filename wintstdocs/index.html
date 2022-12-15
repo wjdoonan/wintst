@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--css link-->
+    <link rel="stylesheet" href="docs.wintst.css">
+    <link rel="stylesheet" href="C:\Users\wjdoo\OneDrive\wilson\wintst\winst style shets\winst styles style sheet.css">
+    <!--tab information-->
+    <title>Wintst Docs Home</title>
+    <link rel="icon" href="C:\Users\wjdoo\OneDrive\Desktop\wintst\Media\wintst_images\wintst docs favicon.png">
+    <!--Meta section-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="Free word prossesor">
+    <meta name="author" content="wintst.inc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--script section-->
+    <script scr="wintst.js"></script>
+    <script src="https://kit.fontawesome.com/536dad5a0d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="new-document" class="tool-background">
+        <div class="tool">
+        <span class="close-tool" onclick="document.getElementById('new-document').style.display = 'none'">&times;</span>
+        <h1 style="color:green;"><span class="fas">&#xf055;</span> Create a new document <span class="fas">&#xf055;</span></h1>
+        <div>
+            <button class="cdb">Create</button>
+        </div>
+        <div id="templates">
+            no templates
+        </div>
+    </div>
+</div>
+<div id="Questions" class="tool-background">
+    <div class="tool">
+    <span class="close-tool" onclick="document.getElementById('Questions').style.display = 'none'">&times;</span>
+    <h1><span style="color:green;"><span class="fas">&#xf059;</span> Questions <span class="fas">&#xf059;</span></span></h1>
+    <div id="templates">
+        <div id="question_form">
+            <div id="question_form_label">
+                <h2>Ask a question?</h2>
+            </div>
+            <div id="question_form_inputs">
+                <form>
+                    <div id="question_form_email">
+                        <input class="input" type="email" style="text-align: center;" placeholder="email"><br>
+                    </div>
+                    <div id="question_form_name">
+                        <input class="input" type="text" style="text-align: center;" placeholder="name"><br>
+                    </div>
+                    <div id="question_form_question">
+                    <textarea class="input" contenteditable="true"  placeholder="Question"></textarea>
+                    </div>
+                    <div id="questions_form_buttons">
+                        <div id="question_form_button_2">
+                            <button class="input" style="background-color: green;color:white;width: 50%;" type="reset">Reset</button>
+                        </div>
+                        <div id="question_form_button_1">
+                            <button class="input" style="background-color: green;color:white;width: 50%;" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="Info" class="tool-background">
+    <div class="tool">
+        <span class="close-tool" onclick="document.getElementById('Info').style.display = 'none'">&times;</span>
+        <h1><span style="rotate: 120deg;color:green;"><span class="fas">&#xf05a;</span> Info <span class="fas">&#xf05a;</span></span></h1>
+        <div id="templates">
+        ...some content here...
+        </div>
+    </div>
+</div>
+</div>
+<div id="Settings" class="tool-background">
+    <div class="tool">
+        <span class="close-tool" onclick="document.getElementById('Settings').style.display = 'none'">&times;</span>
+        <h1><span style="rotate: 120deg;color:green;"><span class="fas fa-gear"></span> Settings <span class="fas fa-gear"></span></span></h1>
+        <div id="templates">
+            <span><input id="main-color" class="setting-input" type="checkbox"><label for="main-color">hello</label></span>
+        </div>
+    </div>
+</div>
+<div class="docsheader">
+    <img src="C:\Users\wjdoo\OneDrive\wilson\wintst\Media\wintst_images\wintst docs logo.png" id="logo_icon" alt="WINTST DOCS">
+    <h1 class="capitalize">wintst docs<br>
+        <span class="border">
+            <i title="Make a new document" onclick="document.getElementById('new-document').style.display = 'block'" class="fas" style="border-radius: 20% 0% 0% 20%;" id="icon">&#xf055;</i><i title="Questions" onclick="document.getElementById('Questions').style.display = 'block'" class="fas" id="icon">&#xf059;</i><i title="Information" onclick="document.getElementById('Info').style.display = 'block'" class="fas" id="icon">&#xf05a;</i><i title="settings" onclick="document.getElementById('Settings').style.display = 'block'" class="fas fa-gear"  style="border-radius: 0% 20% 20% 0%;" id="icon"></i>
+        </span>
+    </h1>
+</div>
+
+</body>
+</html>

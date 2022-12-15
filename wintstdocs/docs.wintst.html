@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--css link-->
+    <link rel="stylesheet" href="docs.wintst.css">
+    <link rel="stylesheet" href="C:\Users\wjdoo\OneDrive\Desktop\wintst\winst style shets\winst styles style sheet.css">
+    <link rel="stylesheet" href="drop_down.css">
+    <!--tab information-->
+    <title>Wintst Docs</title>
+    <link rel="icon" href="C:\Users\wjdoo\OneDrive\Desktop\wintst\Media\wintst_images\wintst docs favicon.png">
+    <!--Meta section-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="Free word prossesor">
+    <meta name="author" content="wintst.inc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--script section-->
+    <script src="C:\Users\wjdoo\OneDrive\Desktop\wintst\wintstdocs\docs.wintst.js"></script>
+    <script src="https://kit.fontawesome.com/536dad5a0d.js" crossorigin="anonymous"></script>
+</head>
+<body onload="a()">
+    <div class="header">
+        <div id="Docs_icon" contenteditable="fale">
+            <a href="C:\Users\wjdoo\OneDrive\Desktop\wintst\wintstdocs\index.html">
+                <img id="logo_icon" draggable="false" src="C:\Users\wjdoo\OneDrive\Desktop\wintst\Media\wintst_images\wintst docs logo.png">
+            </a>
+        </div>
+        <div class="file-data">
+            <div style="width: fit-content;" id="document_name">
+            <input type="text" spellcheck="true" id="icon" value="Untitled Document" style="float: left; border-radius: 12px; border: solid;padding: 0px 0px 0px 5px;outline: none;width: auto;">
+            </div>
+            <div class="tabs" style="text-align: right;">
+                <span onclick="page_docs()" style="font-family: arial;" class="tab" id="page_docs">Page</span>
+                <span onclick="page_insert()" style="font-family: arial;" class="tab" id="isert_docs">Insert</span>
+                <span onclick="page_text()" style="font-family: arial;" class="tab" id="text_docs">text</span>
+                <span onclick="page_image()" style="font-family: arial;" class="tab" id="images_docs">images</span>
+                <span onclick="page_addons()" style="font-family: arial;" class="tab" id="addons_docs">addons</span>
+                <span onclick="page_export()" style="font-family: arial;" class="tab" id="export_docs">export</span>
+                <span style="font-family: arial;width: auto; padding: auto;border-left: 2px solid black;" class="tab" id="tabs_count"></span>
+            </div>
+            <div class="doc-edits">
+                <div class="doc-editor" id="docs-page-edits">
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="doc-editor" id="docs-insert-edits">
+
+                </div>
+                <div class="doc-editor" id="docs-text-edits">
+
+                </div>
+                <div class="doc-editor" id="docs-images-edits">
+
+                </div>
+                <div class="doc-editor" id="docs-addons-edits">
+
+                </div>
+                <div class="doc-editor" id="docs-export-edits">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="editor">
+        <div>
+
+        </div>
+    </div>
+</body>
+</html>

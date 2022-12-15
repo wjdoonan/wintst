@@ -1,0 +1,33 @@
+@import url("C:\Users\wjdoo\OneDrive\wilson\wintst\winst style shets\winst styles style sheet.css");
+/* animations*/
+@keyframes start {
+    from {text-align: right;}
+    to {text-align: center;}
+}
+/*header styles*/
+.header {
+    position: fixed;
+    width: 100%;
+    margin-top: -1px;
+    margin-right: -1px;
+    margin-left: 20%;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 0px;
+    z-index: -1;
+    opacity: 90%;
+}
+#header-text {
+    margin-left: 10%;
+    text-align: center;
+}
+/*end header styles*/
+/*side panel styles*/
+title {
+    color: green;
+    background-color: white;
+}
+.cdb {
+    width: 50%;
+    text-align: center;
+    background-color: var(--favgreen);
+}

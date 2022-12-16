@@ -1,4 +1,4 @@
-@import url("C:\Users\wjdoo\OneDrive\wilson\wintst\winst style shets\winst styles style sheet.css");
+@import url('C:\Users\wjdoo\OneDrive\Documents\GitHub\wintst\winst style shets\winst styles style sheet.css');
 /* animations*/
 @keyframes start {
     from {text-align: right;}
@@ -29,5 +29,8 @@ title {
 .cdb {
     width: 50%;
     text-align: center;
+    background-color: var(--favgreen);
+}
+body {
     background-color: var(--favgreen);
 }

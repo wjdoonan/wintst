@@ -34,3 +34,14 @@ title {
 body {
     background-color: var(--favgreen);
 }
+.documents {
+    display: flexbox;
+}
+#document1 {
+    width: calc(8.5vw * 2);
+    margin: 5%;
+    display: inline-block;
+    height: calc(12vw * 2);
+    border: 1px solid black;
+    text-align: center;
+}
